@@ -17,6 +17,7 @@ import Community from './components/community/Community';
 import NewsletterSubscribers from './components/newsletter/NewsletterSubscribers';
 import Chats from './components/chats/Chats';
 import Settings from './components/settings/Settings';
+import CreateCategoryWithSubcategory from './pages/CreateCategoryWithSubcategory';
 
 function App() {
   return (
@@ -25,7 +26,6 @@ function App() {
         <Routes>
           {/* Public Routes */}
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
           
           {/* Protected Routes */}
           <Route element={<ProtectedRoute />}>
@@ -38,6 +38,8 @@ function App() {
             <Route path="/newsletter-subscribers" element={<NewsletterSubscribers />} />
             <Route path="/chats" element={<Chats />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/categories" element={<CreateCategoryWithSubcategory />} />
+            
           </Route>
           
           {/* Redirect any unknown routes to Dashboard */}

@@ -24,6 +24,8 @@ export const AuthProvider = ({ children }) => {
   // Logout function
   const logout = () => {
     setCurrentUser(null);
+        localStorage.removeItem('token');
+
     localStorage.removeItem('tawun_admin_user');
   };
 

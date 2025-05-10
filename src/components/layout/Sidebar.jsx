@@ -14,6 +14,7 @@ import {
   MailIcon,
   ChatIcon,
   CogIcon,
+  SparklesIcon
 } from '@heroicons/react/outline';
 
 const Sidebar = () => {
@@ -23,6 +24,7 @@ const Sidebar = () => {
     { icon: <ChartBarIcon />, text: 'Dashboard', to: '/' },
     { icon: <DocumentReportIcon />, text: 'Listing Reporting', to: '/listing-reporting' },
     { icon: <UserIcon />, text: 'Users', to: '/users' },
+    { icon: <SparklesIcon />, text: 'Categories', to: '/categories' },
     { icon: <UserGroupIcon />, text: 'Providers', to: '/providers' },
     { icon: <CurrencyDollarIcon />, text: 'Transactions', to: '/transactions' },
     { icon: <BriefcaseIcon />, text: 'Careers', to: '/careers' },
